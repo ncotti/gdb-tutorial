@@ -220,4 +220,6 @@ And example script can be found in `script.gdb`.
 
 * [gdb QuickStart](https://web.eecs.umich.edu/~sugih/pointers/gdbQS.html#:~:text=If%20you%20want%20gdb%20to,or%20gdb%20encounters%20a%20breakpoint.).
 
+* [gdb Cheatsheet](https://cs.brown.edu/courses/cs033/docs/guides/gdb.pdf).
+
 * [GDB: The GNU Project Debugger](https://www.sourceware.org/gdb/documentation/).
