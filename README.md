@@ -214,7 +214,7 @@ You can aswell use a `printf` just like the C function to print nicer outputs.
 (gdb) printf "some_text\n"
 ```
 
-And example script can be found in `script.gdb`.
+An example script can be found in `script.gdb`. You may start gdb with `gdb -x <script_file>`.
 
 ## Bibliography
 
