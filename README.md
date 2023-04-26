@@ -46,6 +46,7 @@ To set a layout to display the code in the terminal and navigate your code with 
 (gdb) lay[out] src  # See code
 (gdb) lay[out] regs # See assembly registers
 (gdb) ref[resh]     # To clean the display if it bugs out
+(gdb) foc[us] <layout_selected> # Allows navigation with arrow keys on that layout.
 ```
 
 The program won't run until said so. To add command line arguments, type:
@@ -184,6 +185,12 @@ It's posible also to print the `backtrace` of the program. This will print all t
 (gdb) bt full
 ```
 
+You can aswell use a `printf` just like the C function to print nicer outputs.
+
+```gdb
+(gdb) printf "some_text\n"
+```
+
 ## Writing a .gdb file script
 
 It's possible to automate the debugging process writing a script file with commands for gdb to execute. The commands are exactly the same as the ones shown, but a few extra ones are needed.
@@ -206,12 +213,6 @@ break [file_name:][function_name]
     # Note that "next" or "step" commands are forbidden here, because
     # the code would move away from the breakpoint and stop execution of the debugger.
 end
-```
-
-You can aswell use a `printf` just like the C function to print nicer outputs.
-
-```gdb
-(gdb) printf "some_text\n"
 ```
 
 An example script can be found in `script.gdb`. You may start gdb with `gdb -x <script_file>`.
